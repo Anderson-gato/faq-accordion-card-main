@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Kumbh Sans', sans-serif;
+
+  background-image: linear-gradient(hsl(283, 75%, 66%), hsl(240, 73%, 65%))
+}
+
+.container {
+  background-color: #fff;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  padding: 5rem 1rem 3rem;
+}
+
+.container .main-image .woman-img {
+  width: 15rem;
+  position: absolute;
+  margin-top: -5rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .faq h2 {
+  text-align: center;
+  color: hsl(238, 29%, 16%);
+  font-size: 2rem;
+
+  padding-bottom: 2rem;
+}
+
+.container .faq .questions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+/* .container .faq .questions img {
+  width: 1rem;
+} */
