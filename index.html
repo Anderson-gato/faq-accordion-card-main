@@ -23,44 +23,102 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <section class="container">
+    <main id="container">
+      <section class="section">
         <div class="main-image">
-          <!-- <img
-            class="woman-img"
+          <img
+            class="woman-img bg-shadow"
             src="/images/illustration-woman-online-mobile.svg"
             alt="mulher olhando um computador"
-          /> -->
+          />
+          <img
+            class="shadow-img"
+            src="/images/bg-pattern-mobile.svg"
+            alt="shadow"
+          />
         </div>
-        <div class="faq">
-          <h2 class="title">FAQ</h2>
 
+        <div class="conteudo">
+          <h1 class="title">FAQ</h1>
+          <!-- questão 1 -->
           <div class="questions">
-            <p class="doubt">How many team members can I invite?</p>
-            <img src="/images/icon-arrow-down.svg" alt="arrow" />
+            <div class="question" data-paragraph="#paragraph1">
+              <p>How many team members can I invite?</p>
+              <img
+                class="arrows"
+                src="/images/icon-arrow-down.svg"
+                alt="arrow"
+              />
+            </div>
+            <p id="paragraph1" class="paragraphs">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
           </div>
-
+          <!-- questão 2 -->
           <div class="questions">
-            <p class="doubt">What is the maximus file upload size?</p>
-            <img src="/images/icon-arrow-down.svg" alt="arrow" />
+            <div class="question" data-paragraph="#paragraph2">
+              <p>Whts is the maximum file upload size?</p>
+              <img
+                class="arrows"
+                src="/images/icon-arrow-down.svg"
+                alt="arrow"
+              />
+            </div>
+            <p id="paragraph2" class="paragraphs">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
           </div>
-
+          <!-- questão 3 -->
           <div class="questions">
-            <p class="doubt">How do I reset my password?</p>
-            <img src="/images/icon-arrow-down.svg" alt="arrow" />
+            <div class="question" data-paragraph="#paragraph3">
+              <p>How do I reset my password?</p>
+              <img
+                class="arrows"
+                src="/images/icon-arrow-down.svg"
+                alt="arrow"
+              />
+            </div>
+            <p id="paragraph3" class="paragraphs">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
           </div>
-
+          <!-- questão 4 -->
           <div class="questions">
-            <p class="doubt">Can I cancel my subcription?</p>
-            <img src="/images/icon-arrow-down.svg" alt="arrow" />
+            <div class="question" data-paragraph="#paragraph4">
+              <p>Can I cancel my subscription?</p>
+              <img
+                class="arrows"
+                src="/images/icon-arrow-down.svg"
+                alt="arrow"
+              />
+            </div>
+            <p id="paragraph4" class="paragraphs">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
           </div>
-
+          <!-- questão 5 -->
           <div class="questions">
-            <p class="doubt">Do you provide additional support</p>
-            <img src="/images/icon-arrow-down.svg" alt="arrow" />
+            <div class="question" data-paragraph="#paragraph5">
+              <p>Do you provide additional support?</p>
+              <img
+                class="arrows"
+                src="/images/icon-arrow-down.svg"
+                alt="arrow"
+              />
+            </div>
+            <p id="paragraph5" class="paragraphs">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="/script.js"></script>
   </body>
 </html>

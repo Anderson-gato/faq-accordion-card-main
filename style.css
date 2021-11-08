@@ -7,54 +7,111 @@
 body {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif; 
 
-  background-image: linear-gradient(hsl(283, 75%, 66%), hsl(240, 73%, 65%))
+  background-image: linear-gradient(hsl(293, 80%, 61%), hsl(240, 73%, 65%))
 }
 
-.container {
-  background-color: #fff;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+#container {
+  width: 100%;
+  height: 100%;
+  padding: 8rem 1.5rem 2.5rem 1.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+
+  
+}
+
+#container .section {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+
+  border-radius: 1rem;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  
 
   position: relative;
-
-  padding: 5rem 1rem 3rem;
 }
 
-.container .main-image .woman-img {
+.section .main-image .woman-img {
   width: 15rem;
-  position: absolute;
-  margin-top: -5rem;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.container .faq h2 {
-  text-align: center;
-  color: hsl(238, 29%, 16%);
-  font-size: 2rem;
-
+  position: relative;
+  top: -6.7rem;
+  /** vai colocar o elemento centralizado ao elemento pai */
+  left: 50%;
+  transform: translateX(-50%);
   padding-bottom: 2rem;
+  z-index: 2;
 }
 
-.container .faq .questions{
+.section .main-image .shadow-img {
+  position: absolute;
+  top: -0.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section .conteudo {
+  margin-top: -5rem; 
+}
+
+.section .conteudo .title {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  color: hsl(238, 29%, 16%);
+}
+
+.section .conteudo .questions {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.section .conteudo .questions .question {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  font-size: .75rem;
+
+  color: hsl(237, 12%, 33%);
+  
+  padding: 1rem 0;
+  cursor: pointer;
   
 }
 
+.section .conteudo .questions .question:hover {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
 
+.questions .question .bold-text {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
 
-/* .container .faq .questions img {
-  width: 1rem;
-} */
+.section .conteudo .questions .arrow-up {
+  transform: rotate(180deg);
+}
+
+/* aqui vai sumir com o elemento */
+.questions .paragraphs {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  font-size: .75rem;
+  color: hsl(237, 12%, 33%);
+  padding-bottom: 1rem;
+} 
+
+/* quando for disparado a ação do click, vai voltar com o elemento na tela */
+.questions .active {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+}
